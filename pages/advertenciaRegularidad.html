@@ -1,25 +1,32 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <title>Advertencia de Regularidad</title>
   <link rel="stylesheet" type="text/css" href="/bootstrap-5.3.0-dist/css/bootstrap.css">
-  <link rel="stylesheet" type="text/css" href="/style/style.css"> 
+  <link rel="stylesheet" type="text/css" href="/style/style.css">
 </head>
+
 <body>
-  <h1>Advertencia de Regularidad</h1>
-  <p>Estimado [Nombre del Alumno],</p>
-  <p>Te escribimos para informarte que tu situación de regularidad en la materia "[Nombre de la Materia]" está en peligro. Según nuestros registros, tu porcentaje de asistencia actual es [Porcentaje de Asistencia]%, lo cual está por debajo del mínimo requerido para mantener tu regularidad en esta materia.</p>
-  <p>Si no mejoras tu asistencia y situación en los próximos días, podrías perder la regularidad y enfrentar consecuencias académicas.</p>
-  <p>Te recomendamos que tomes medidas inmediatas para mejorar tu asistencia y cumplir con los requisitos académicos.</p>
-  <p>Si tienes alguna pregunta o necesitas más información, no dudes en contactarnos.</p>
-  <button onclick="enviarAdvertencia()">Enviar Advertencia</button>
-  <script>
-    function enviarAdvertencia() {
-      // Aquí puedes agregar el código para enviar la advertencia al alumno, por ejemplo, a través de un formulario de contacto o una notificación.
-      // También puedes redirigir al alumno a otra página con más información.
-      alert("Advertencia enviada al alumno.");
-      window.location.href = "otra_pagina.html"; // Reemplaza "otra_pagina.html" con la URL deseada.
-    }
-  </script>
+  <img src="/img/DS.jpg" alt="logoUrquiza" style="width: 550px; height: 150px;">
+  <div class="regularidad-container">
+    <h1>Advertencia de Regularidad</h1>
+    <form method="post" action="enviarAdvertencia.php">
+      <label for="nombreAlumno">Nombre del Alumno:</label>
+      <input type="text" name="nombreAlumno" placeholder="Ingrese el nombre del alumno"><br>
+
+      <label for="nombreMateria">Nombre de la Materia:</label>
+      <input type="text" name="nombreMateria" placeholder="Ingrese el nombre de la materia"><br>
+
+      <label for="porcentajeAsistencia">Porcentaje de Asistencia:</label>
+      <input type="text" name="porcentajeAsistencia" placeholder="Ingrese el porcentaje de asistencia"><br>
+
+      <label for="mensaje">Mensaje de Advertencia:</label>
+      <textarea name="mensaje" placeholder="Redacte el mensaje de advertencia"></textarea><br>
+
+      <button type="submit">Enviar Advertencia</button>
+    </form>
+  </div>
 </body>
+
 </html>

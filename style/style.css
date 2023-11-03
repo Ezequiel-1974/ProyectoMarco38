@@ -5,7 +5,8 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    background-color: #f0f8ff; /* Color agua marina */
+    background-color: #f0f8ff; 
+    flex-wrap: wrap;
   }
   
   /* Estilo para campos de información */
@@ -43,4 +44,11 @@ body {
   h1 {
     text-align: center;
   }
-  
+  textarea{
+    width: 500px;
+    height: 100px;
+    margin: 30px;
+  }
+  .regularidad-container{
+padding: 10px;
+  }
