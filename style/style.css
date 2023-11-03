@@ -1,0 +1,46 @@
+/* Estilo general para centrar contenido */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f8ff; /* Color agua marina */
+  }
+  
+  /* Estilo para campos de información */
+  input[type="text"], input[type="password"], input[type="checkbox"], select {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #5ad1ef; 
+    background-color: #5ad1ef; 
+    border-radius: 5px;
+  }
+  
+  /* Estilo para botones */
+  button {
+    padding: 10px 20px;
+    background-color: #4caf50; /* Color verde */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Estilo para listas y elementos de lista */
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  /* Estilo para los elementos de la lista (por ejemplo, alumnos) */
+  li {
+    margin: 5px 0;
+  }
+  
+  /* Estilo para los títulos de pantalla */
+  h1 {
+    text-align: center;
+  }
+  
